@@ -37,7 +37,7 @@ def solve(s):
     # ['neerja', 'narayan']
     cap = [i.capitalize() for i in s1]
     # ['Neerja', 'Narayan']
-    res = " ".join(res)
+    res = " ".join(cap)
     # Neerja Narayan
     return res
 
