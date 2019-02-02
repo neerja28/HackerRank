@@ -65,12 +65,17 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 
 if __name__ == '__main__':
-    s = input()
-    print (any(s.isalnum for char in s))
-    print (any(s.isalpha for char in s))
-    print (any(s.isdigit for char in s))
-    print (any(s.islower for char in s))
-    print (any(s.isupper for char in s))
+    string = input()
+    print (any(char.isalnum() for char in string))
+    print (any(char.isalpha() for char in string))
+    print (any(char.isdigit() for char in string))
+    print (any(char.islower() for char in string))
+    print (any(char.isupper() for char in string))
+
+# any() returns:
+# True if at least one element of an iterable is true
+# False if all elements are false or if an iterable is empty
+
 
 # any() returns:
 # True if at least one element of an iterable is true
