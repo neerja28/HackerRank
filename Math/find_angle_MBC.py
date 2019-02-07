@@ -44,8 +44,8 @@ BC = int(input())
 radians = math.atan2(AB, BC)
 # Convert radians to degree
 deg = math.degrees(radians)
-# Convert deg to int and then to str to add the ˚ symbol
-print (str(int(deg))+ '°')
+# Convert deg is rounded (Question says so) to the nearest number and to int and then to str to add the ˚ symbol
+print (str(int(round(deg)))+ '°')
 
 
 #https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atan2
