@@ -19,6 +19,7 @@
 # Sample Output
 # [[0, 0, 0], [0, 0, 1], [0, 1, 0], [1, 0, 0], [1, 1, 1]]
 
+# Code using python2
 if __name__ == '__main__':
     x = int(input())
     y = int(input())
@@ -27,4 +28,32 @@ if __name__ == '__main__':
 
     ans = [[i,j,k] for i in range(x+1) for j in range(y+1) for k in range (z+1) if (i+j+k) !=n]
     print (ans)
+    
+# Code using python3
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+    result = []
+    
+    for i in range(x+1):
+        for j in range(y+1):
+            for k in range(z+1):
+                if((i+j+k) != n):
+                    arr = [i,j,k]
+                    result.append(arr)
+    print(result)
+    
+# Alt code using python 3
+
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+    
+print([[i,j,k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if (i+j+k) != n])
+
+    
 
