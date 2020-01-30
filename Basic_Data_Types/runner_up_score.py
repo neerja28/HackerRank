@@ -21,3 +21,15 @@ if __name__ == '__main__':
     set_arr = set(map_arr)
     list_arr = sorted(list(set_arr))
     print (list_arr[-2])
+
+    
+    # Python map syntax
+    
+    map(fun,iter)
+    
+    
+    Create a map object
+    convert map object to set 
+    convert set to list and proceed with list operations
+    
+    Map --> set ---> list (+operations)
